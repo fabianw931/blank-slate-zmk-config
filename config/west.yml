@@ -1,7 +1,7 @@
 manifest:
   remotes:
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: fabianw931
+      url-base: https://github.com/fabianw931
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
@@ -10,7 +10,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: blank-slate-zmk-module
-      remote: petejohanson
+      remote: fabianw931
       revision: core-zephyr-hwmv2-update
   self:
     path: config
