@@ -17,13 +17,11 @@
 #define TBLE_MIT 1
 
 /* Layer indices. Keep the base layers first so momentary layers work on all. */
-#define LINUX  0
-#define MACOS  1
-//#define COLEMAK 2
-//#define DVORAK  3
-#define LOWER   4
-#define RAISE   5
-#define ADJUST  6
+#define LINUX   0
+#define MACOS   1
+#define LOWER   2
+#define RAISE   3
+#define ADJUST  4
 
 / {
     chosen {
@@ -67,27 +65,7 @@
                 &kp RALT     &kp ESC    &kp LALT   &kp LGUI   &mo LOWER      &kp SPACE      &mo RAISE  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
             >;
         };
-/*
-        colemak {
-            display-name = "Colemak";
-            bindings = <
-                &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp G      &kp J   &kp L      &kp U      &kp Y      &kp SEMI   &kp BSPC
-                &kp ESC    &kp A      &kp R      &kp S      &kp T      &kp D      &kp H   &kp N      &kp E      &kp I      &kp O      &kp SQT
-                &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp K   &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RET
-                &kp RALT  &kp LCTRL  &kp LGUI   &kp LALT   &mo LOWER       &kp SPACE      &mo RAISE  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-            >;
-        };
 
-        dvorak {
-            display-name = "Dvorak";
-            bindings = <
-                &kp TAB    &kp SQT    &kp COMMA  &kp DOT    &kp P      &kp Y      &kp F   &kp G      &kp C      &kp R      &kp L      &kp BSPC
-                &kp ESC    &kp A      &kp O      &kp E      &kp U      &kp I      &kp D   &kp H      &kp T      &kp N      &kp S      &kp FSLH
-                &kp LSHFT  &kp SEMI   &kp Q      &kp J      &kp K      &kp X      &kp B   &kp M      &kp W      &kp V      &kp Z      &kp RET
-                &kp RSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &mo LOWER      &kp SPACE      &mo RAISE  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-            >;
-        };
-*/
         lower {
             display-name = "Lower";
             bindings = <
